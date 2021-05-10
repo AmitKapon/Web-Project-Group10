@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css2.css" >
-    <title>עינת עשהאל- קביעת תור</title>
-</head>
-<body>
-<div class="grid-container" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עינת עשהאל- קביעת תורים</title>
 
+    <link rel="stylesheet" href="css_9_style.css">
+  </head>
+  <body>
 
-    <!--Header & Logo-->
+    <div class="grid-container" id="container" >
+
+        <!--Header & Logo-->
         <div class="header" >
             <h1><img src="images/piclogo.png" alt="Logo Picture" width="5%"> עינת עשהאל - דיאטנית קלינית</h1>
         </div>
 
-    <!--Click Bar-->
+        <!--Click Bar-->
     <div class="headerMenu" >
                         <ul class = "Navbar" >
 
@@ -33,29 +35,69 @@
                             <div class="column">   <li><a href="7_myAreaPage.html" width="16.6%" style="float: left ">איזור אישי</a></li> </div>
 
                             <div class="column">  <li><a href="8_contactPage.html" width="16.6%" style="float: left ">יצירת קשר</a></li> </div>
-
                         </ul>
-                    </div>
+    </div>
 
-    <!--Page content-->
-        <div class="page"><br> קביעת תור
+      <div class="buttoncalender" id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">הקודם</button>
+          <button id="nextButton">הבא</button>
+        </div>
+      </div>
+
+
+     <!--Page content-->
+        <div class="page" > קביעת תור
+
+
+              <div class="weekdays" id="weekdays" >
+                <div>ראשון</div>
+                <div>שני</div>
+                <div>שלישי</div>
+                <div>רביעי</div>
+                <div>חמישי</div>
+                <div>שישי</div>
+                <div>שבת</div>
+              </div>
+
+             <div class="calender" id="calendar" ></div>
         </div>
 
-    <!--contact bar-->
-        <div class="contact"> <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <!--contact bar-->
+        <div class="contact"  > <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
             <div class="wrapper" style="background-color: #002bff">
             <ul>
-                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
-                <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
-
-              </ul>
+                <li class="column"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="column"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                <li class="column"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="column"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                <li class="column"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
             </div>
         </div>
+</div>
 
-   </div>
+            <div id="newEventModal">
+                  <h2>יצירת תור חדש</h2>
 
-</body>
+                  <input id="eventTitleInput" placeholder="הכנסת שם מלא" />
+
+                  <button id="saveButton">שמירה</button>
+                  <button id="cancelButton">ביטול</button>
+            </div>
+
+            <div id="deleteEventModal">
+                 <h2>אירוע</h2>
+
+                 <p id="eventText"></p>
+
+                 <button id="deleteButton">מחק</button>
+                 <button id="closeButton">בטל</button>
+            </div>
+
+            <div id="modalBackDrop"></div>
+
+    <script src="script3_scheduling9.js"></script>
+  </body>
 </html>
