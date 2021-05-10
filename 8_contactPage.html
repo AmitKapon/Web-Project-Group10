@@ -38,6 +38,37 @@
 
     <!--Page content-->
         <div class="page"><br> יצירת קשר
+            <div class="contact-grid">
+                <div class="contact-box">
+			            <input type="text" class="field" required autocomplete="name" placeholder="שם">
+				        <input type="email" class="field" placeholder="כתובת מייל" required autocomplete="email">
+				        <input type="tel" class="field" placeholder="טלפון" pattern="[0-9]{3}-[0-9]{7}" required>
+				        <textarea placeholder="תוכן הפנייה" class="field" required></textarea>
+				        <button class="btn">שלח</button>
+			    </div>
+                    <ul class="details">
+                        <li>
+                            <span class="detail-content">הכלנית 7 סביון</span>
+                            <span class="detail-type">כתובת הקליניקה</span>
+                            <span class="detail-emoji">&#127968;</span>
+                        </li>
+                        <li>
+                            <span class="detail-content">054-4723047</span>
+                            <span class="detail-type">מספר טלפון</span>
+                            <span class="detail-emoji">&#128222</span>
+                        </li>
+                        <li>
+                            <span class="detail-content">whatsapp - ב </span>
+                            <span class="detail-type">אפשר גם</span>
+                            <span class="detail-emoji"><img src="https://image.freepik.com/free-vector/whatsapp-icon-design_23-2147900927.jpg" height="30" sizes="30" onclick="openWhatsApp()"></span>
+                        </li>
+                        <li>
+                            <span class="detail-content">einata14@gmail.com</span>
+                            <span class="detail-type">כתובת מייל</span>
+                            <span class="detail-emoji">&#128231;</span>
+                        </li>
+                    </ul>
+		    </div>
         </div>
 
     <!--contact bar-->
@@ -58,3 +89,10 @@
 
 </body>
 </html>
+
+<script>
+//user-defined function to open and share web content on WhatsApp
+function openWhatsApp() {
+    window.open('whatsapp://send?text= c');
+    }
+</script>
