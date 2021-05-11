@@ -83,6 +83,23 @@ font-size: 100%;
     font-size: 150%;
 }
 
+.reccomands-grid{
+    display: grid;
+    grid-template-areas: 'left right';
+}
+
+.reccomands-grid-left{
+    grid-area: left;
+}
+
+.reccomands-grid-right{
+    grid-area: right;
+}
+.image img{
+    border-style: groove;
+    padding-left: 100px;
+}
+
 .contact{
     grid-area: con1;
    /* border: white solid;
@@ -179,7 +196,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: blueviolet;
+    background: #dd6c9f;
     left: 0;
     top: 0;
     border-radius: 10px;
