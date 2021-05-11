@@ -51,11 +51,15 @@
             <div class="main-forum">
                 <div class="header-forum">
                 </div>
-                <textarea></textarea>
+                <label>כתוב תגובה:</label>
+                <textarea ></textarea><br><br><br>
+                 <label>שם:</label>
+                 <input>
                 <button>הוסף תגובה</button>
                 <div class="comments-forum">
                 </div>
             </div>
+
             <script src="script2_data.js"></script>
             <script>
                 var id = window.location.search.slice(1);
@@ -140,17 +144,13 @@
             font-size: 40%;
         }
         .forum button {
-            display: block;
+            display: inline-block;
             margin: 10px 0;
-            font-size: 60%;
+            font-size: 90%;
         }
         .top-bar {
             background-color: skyblue;
             padding: 0 40px;
-        }
-        .main-forum {
-            background-color: #F6F6EF;
-            padding: 10px 40px;
         }
         .comments-forum {
             margin: 40px 0;
@@ -172,6 +172,33 @@
         .comment-ts {
             padding-left: 10px;
         }
+
+         .main-forum {
+                    font-size: 70%;
+             padding: 10px 40px;
+                }
+
+                .main-forum label{
+		            display: inline-block;
+		            text-align: right;
+		            float: center;
+                }
+
+                .main-forum input{
+                    display: inline-block;
+                    text-align: left;
+                    float: center;
+                }
+                .main-forum textarea{
+                    display: inline-block;
+                    text-align: right;
+                    float: center;
+                    font-size: 50%;
+                }
+                 .main-forum button{
+                    display: inline-block;
+                    float: center;
+                }
         </style>
         </div>
         </div>
