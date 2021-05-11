@@ -1,31 +1,79 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="LoginCssFile.css" >
-<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+  <html dir="rtl" lang="he">
+    <link rel="stylesheet" href="css2.css" >
+    <title>עינת עשהאל- יצירת קשר</title>
+</head>
+<body>
+<div class="grid-container" >
 
-  <head>
+    <!--Header & Logo-->
+        <div class="header" >
+            <h1><img src="images/piclogo.png" alt="Logo Picture" width="5%"> עינת עשהאל - דיאטנית קלינית</h1>
+        </div>
 
-    <meta charset="utf-8">
+    <!--Click Bar-->
+    <div class="headerMenu" >
+                        <ul class = "Navbar" >
 
-    <title>َAnimated Login Form</title>
+                            <div class="column"><li><a href="1_homePage.html" width="16.6%" style="float: left ">ראשי</a> </li> </div>
 
-    <link rel="stylesheet" href="style.css">
+                            <div class="column"><li><a href="2_aboutPage.html" width="16.6%" style="float: left ">אודות</a> </li> </div>
 
-  </head>
+                            <div class="column"> <li><a href="3_approachPage.html" width="16.6%" style="float: left ">גישת הטיפול</a></li> </div>
 
-  <body>
+                            <div class="column"><li><a href="4_tipsPage.html" width="16.6%" style="float: left "> טיפים והמלצות</a></li></div>
 
-<form class="box" action="index.html" method="post">
+                            <div class="column"> <li><a href="5_personalStoriesPage.html" width="16.6%" style="float: left ">סיפורי הצלחה</a></li></div>
 
-  <h1>Login</h1>
+                            <div class="column">  <li><a href="6_forumPage.html" width="16.6%" style="float: left ">פורום</a></li>  </div>
 
-  <input type="text" name="" placeholder="Username">
+                            <div class="column">   <li><a href="7_myAreaPage.html" width="16.6%" style="float: left ">איזור אישי</a></li> </div>
 
-  <input type="password" name="" placeholder="Password">
+                            <div class="column">  <li><a href="8_contactPage.html" width="16.6%" style="float: left ">יצירת קשר</a></li> </div>
 
-  <input type="submit" onclick="window.location.href='7_myAreaPage.html' " name="" value="Login">
+                            <div class ="button">
+                            <button class="glow-on-hover" type="button" onclick="window.location.href='9_schedulePage.html';" style="font-family:'Baskerville Old Face' ; float: right">קביעת תור  </a></button>
+                            </div>
+                        </ul>
+                    </div>
 
-</form>
+    <!--Page content-->
+        <div class="page"><br> התחברות
+            <div class="contact-grid">
+                <div class="contact-box">
+			            <input type="text" class="field" required autocomplete="name" placeholder="שם משתמש">
+				        <input type="password" class="field" placeholder="סיסמא" required autocomplete="password">
 
-  </body>
+				        <button class="btn" onclick="window.location.href='7_myAreaPage.html'">התחבר</button>
+                  <button class="btn" onclick="window.location.href='SignUpPage.html'">הירשם עכשיו!</button>
+			    </div>
 
+		    </div>
+        </div>
+
+    <!--contact bar-->
+        <div class="contact"> <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+            <div class="wrapper" style="background-color: #002bff">
+            <ul>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+
+              </ul>
+            </div>
+        </div>
+
+   </div>
+
+</body>
 </html>
+
+<script>
+//user-defined function to open and share web content on WhatsApp
+function openWhatsApp() {
+    window.open('whatsapp://send?text= c');
+    }
+</script>
