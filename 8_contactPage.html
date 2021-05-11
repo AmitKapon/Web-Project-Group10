@@ -6,6 +6,7 @@
     <title>עינת עשהאל- יצירת קשר</title>
 </head>
 <body>
+<script src="script6_forum.js"></script>
 <div class="grid-container" >
 
     <!--Header & Logo-->
@@ -47,7 +48,7 @@
 				        <input type="email" class="field" placeholder="כתובת מייל" required autocomplete="email">
 				        <input type="tel" class="field" placeholder="טלפון" pattern="[0-9]{3}-[0-9]{7}" required>
 				        <textarea placeholder="תוכן הפנייה" class="field" required></textarea>
-				        <button class="btn">שלח</button>
+				        <button class="btn" type="submit" onclick="MessBox_contactMe(document.getElementById('Phone').value, document.getElementById('Email').value, document.getElementById('Comment').value)">שלח</button>
 			    </div>
                     <ul class="details">
                         <li>
@@ -89,7 +90,36 @@
         </div>
 
    </div>
+<!--3contact form-->
+        <div class="cont">
+            <form>
 
+
+                <div class="column"><a>
+                     <label for="FullName"></label>
+                     <input type="text" id="FullName" name="FullName" placeholder="Full Name" width="30%" style=" color: white; width: 100%;"  required>
+                </a></div>
+
+                <div class="column"><a
+                    ><label for="Phone"></label>
+                    <input type="text" id="Phone" name="Phone" placeholder="Phone Number"width="30%" style=" color: white;width: 100%;"  >
+                </a></div>
+
+                <div class="column"><a
+                    ><label for="Email"></label>
+                    <input type="text" id="Email" name="Email" placeholder="Email Address" width="30%" style=" color: white; width: 100%;"  required>
+                </a></div>
+
+                <div class="comment"><a>
+                    <label for="Comment"></label>
+                    <textarea  id="Comment" name="Comment" cols="50" rows="4" placeholder="Write a comment .." width="60%" style=" color: white; width: 60%;" required></textarea>
+                </a></div>
+
+                <div class="column"><a>
+                <button  >Send</button>
+                </a></div>
+            </form>
+        </div>
 </body>
 </html>
 
