@@ -22,12 +22,12 @@ font-size: 100%;
 
     grid-gap: 2px;
     display: grid;
-      grid-template-columns: 0.5fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 0.2fr 1.4fr 0.4fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.4fr 0.4fr;
     height: 100vh;
     grid-template-areas:
             'head head head head'
-            'butt nava nava nava'
+            'nava nava nava nava'
             'side cont cont pict'
             'con1 con1 con1 con1';
 }
@@ -70,7 +70,9 @@ font-size: 100%;
 
 .personalStories{
     grid-area: side;
-    /*border: white solid;*/
+    /*
+    border: white solid;
+    */
     text-align: center;
     font-size: 150%;
 }
@@ -189,14 +191,9 @@ body {
     100% { background-position: 0 0; }
 }
 
-
-
 /* Let's style the wrapper in such away that,
 it should always be at the center of the browser */
 .wrapper {
-
-
-
 
 }
 /* Style the Un-order list by setting its list-style to none */
